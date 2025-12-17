@@ -13,7 +13,7 @@ public class StudentController{
 
 
 
-    @PostMapping(/"post")
+    @PostMapping("/post")
     public StudentEntity sendData(@RequestBody StudentEntity stu){
         return ser.postData(stu);
     }

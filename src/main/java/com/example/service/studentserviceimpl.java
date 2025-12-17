@@ -15,6 +15,6 @@ public class impl implements studentservice{
 //deletebyid()
 //existsbyit()
 public studententity postValue(studententity stu){
-    return student.save(stu)
+    return student.save(stu);
 }
 }
