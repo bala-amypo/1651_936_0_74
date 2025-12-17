@@ -14,5 +14,7 @@ public class StudentController{
 
 
     @PostMapping(/"post")
-    public StudentEntity
+    public StudentEntity sendData(@RequestBody StudentEntity stu){
+        return ser.postData(stu);
+    }
 }
