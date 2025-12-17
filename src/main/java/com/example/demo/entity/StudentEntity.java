@@ -4,7 +4,7 @@ import java.sql.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GeneratedType;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 @Entity
 public class StudentEntity{
@@ -15,7 +15,6 @@ public class StudentEntity{
     private String name;
     private String password;
     private Date date;
-}
 public Integer getId(){
     return id;
 }
@@ -52,4 +51,8 @@ public StudentEntity(Integer id, String name, String email, String password, Dat
     this.email=email;
     this.password=password;
     this.date=date;
+}public  StudentEntity(){
+
+}
+
 }
