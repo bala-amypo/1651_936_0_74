@@ -6,5 +6,5 @@ public class StudentEntity(){
     private String username;
     private String password;
     private Date date;
-    private  
 }
+public Integer getId()(return)
