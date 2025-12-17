@@ -31,4 +31,16 @@ public String getPassword(){
 public void setPassword(String password){
     this.password=password; 
 }
-public Date get
+public Date getDate(){
+    return date;
+}
+public void setDate(Date date){
+    this.date=date;
+}
+public StudentEntity(){
+    this.id=id;
+    this.name=name;
+    this.email=email;
+    this.password=password;
+    this.date=date;
+}
