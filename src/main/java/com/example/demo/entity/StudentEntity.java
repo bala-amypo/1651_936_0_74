@@ -3,9 +3,13 @@ package com.example.demo.entity
 import java.sql.Date;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GeneratedType;
 import jakarta.persistence.Id;
 @Entity
 public class StudentEntity{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String email;
     private String name;
