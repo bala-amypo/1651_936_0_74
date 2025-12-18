@@ -32,16 +32,16 @@ public class StudentController{
         return ser.getAllData();
     }
     @DeleteMapping("/delete/{id}")
-    public String deleteval(@PathVariable int id){
+    public String deleteVal(@PathVariable int id){
         return ser.DeleteData(id);
     }
-    @GetMappng("/getid/{id}")
-    public StudentEntity getdataid(@PathVariable int id){
+    @GetMapping("/getid/{id}")
+    public StudentEntity getDataid(@PathVariable int id){
         return ser.getData(id);
     }
     @PutMapping("/put/{id}")
-    public StudentEntity putval(@PathVariablen int id,@RequestBody StudentEntity entity){
-        return ser.updateDate(id,entity);
+    public StudentEntity putval(@PathVariable int id,@RequestBody StudentEntity entity){
+        return ser.updateData(id,entity);
     }
 
 }
