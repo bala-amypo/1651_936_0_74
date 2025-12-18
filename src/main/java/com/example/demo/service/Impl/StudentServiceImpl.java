@@ -6,8 +6,8 @@ import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-@service
-public class impl implements StudentService{
+@Service
+public class Impl implements StudentService{
 @Autowired StudentRepo student;
 //save()
 //findall()
