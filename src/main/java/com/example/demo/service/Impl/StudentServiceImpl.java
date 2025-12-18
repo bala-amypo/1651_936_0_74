@@ -33,8 +33,10 @@ public class StudentServiceImpl implements StudentService {
         @Override
         public StudentEntity update(int id,StudentEntity entity){
             if(student.existsById(id)){
-                entity.setId(id)
+                entity.setId(id);
+                return student.save(entity);
             }
+            return null;
         }
 
 
