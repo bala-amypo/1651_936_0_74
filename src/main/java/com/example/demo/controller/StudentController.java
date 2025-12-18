@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
 import java.util.List;
@@ -26,7 +27,7 @@ public class StudentController{
     public List<StudentEntity> getval(){
         return ser.getAllData();
     }
-    @DeleteMapping("/delete")
+    @DeleteMapping("/delete/{id}")
     public String deleteval(@PathVariable int id){
         return ser.DeleteData(id);
     }
