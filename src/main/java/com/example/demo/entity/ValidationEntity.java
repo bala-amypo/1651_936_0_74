@@ -1,3 +1,10 @@
 package com.example.demo.Entity;
-
-public
+import jakarta.persistence.Entity;
+@Entity
+public class ValidationEntity{
+    private Integer id;
+    private String name;
+    private String email;
+    private String password;
+    private Integer age;
+}
