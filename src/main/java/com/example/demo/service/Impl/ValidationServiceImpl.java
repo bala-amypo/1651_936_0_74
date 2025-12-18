@@ -6,14 +6,9 @@ import com.example.demo.repository.ValidationRepo;
 import com.example.demo.service.ValidationService;
 import java.util.List;
 @Service
-public class ValidationServiceImpl implements ValidationService {
+public interface ValidationServiceImpl implements ValidationService {
     @Autowired ValidationRepo student;
-    //save()
-    //findAll()
-    //findById()
-    //deleteById();
     //existByid();
-        @Override
         public ValidationEntity postData(ValidationEntity stu){
             return student.save(stu);
         }   
