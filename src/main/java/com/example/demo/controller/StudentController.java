@@ -28,7 +28,7 @@ public class StudentController{
         return ser.getAllData();
     }
     @DeleteMapping("/delete/{id}")
-    public String deleteval(@PathVariable int id){
+    public String delete(@PathVariable int id){
         return ser.DeleteData(id);
     }
 
