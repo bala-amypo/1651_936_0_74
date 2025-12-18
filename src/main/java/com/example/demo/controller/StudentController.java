@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.GetMapping;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
 import java.util.List;
@@ -33,11 +37,11 @@ public class StudentController{
     }
     @GetMappng("/getid/{id}")
     public StudentEntity getdataid(@PathVariable int id){
-        return service.getData{id}
+        return ser.getData(id);
     }
     @PutMapping("/put/{id}")
     public StudentEntity putval(@PathVariablen int id,@RequestBody StudentEntity entity){
-        return service.updateDate(id,entity)
+        return ser.updateDate(id,entity);
     }
 
 }
