@@ -1,14 +1,14 @@
-package com.example.demo.service.impl;
+package com.example.demo.service.Impl;
 import org.springframework.sterotype.service;
 
-import com.example.demo.entity.studententity;
-import com.example.demo.service.studentservice;
+import com.example.demo.entity.StudentEntity;
+import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
 @service
-public class impl implements studentservice{
-@Autowired studentrepo student;
+public class impl implements StudentService{
+@Autowired StudentRepo student;
 //save()
 //findall()
 //findbyid()
