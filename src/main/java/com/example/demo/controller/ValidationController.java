@@ -22,8 +22,8 @@ public class ValidationController{
 
 
 
-    @PostMapping("/post")
-    public ValidationEntity sendData(@Valid @RequestBody ValidationEntity stu){
+    @PostMapping("/post2")
+    public ValidationEntity sentData(@Valid @RequestBody ValidationEntity stu){
         return ser.postData(stu);
 
 
