@@ -1,13 +1,14 @@
 package com.example.demo.service.Impl;
-import org.springframework.sterotype.service;
+import org.springframework.sterotype.Service;
 
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
+import com.example.demo.repository.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 @Service
-public class Impl implements StudentService{
+public class StudentServiceImpl implements StudentService{
 @Autowired StudentRepo student;
 //save()
 //findall()
