@@ -1,5 +1,10 @@
 package com.example.demo.service;
-
-public class ValidationService{
-    
+import com.example.demo.entity.ValidationEntity;
+import java.util.List;
+public interface StudentService{
+    ValidationEntity postData(ValidationEntity stu);
+    List<ValidationEntity>getAllData();
+    String DeleteData(int id);
+    ValidationEntity getData(int id);
+    ValidationEntity updateData(int id,ValidationEntity entity);
 }
