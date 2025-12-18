@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 @RestController
 public class ValidationController{
+    @Autowired ValidationService ser;
     @PostMapping("/post")
-    public StudentEntity sendData(@RequestBody StudentEntity stu){
+    public ValidationEntity sendData(@Valid@RequestBody ValidationEntity stu){
         return ser.postData(stu);
-
 
     }
 
