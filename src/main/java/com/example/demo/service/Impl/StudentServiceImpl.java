@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.StudentRepo;
 import com.example.demo.service.StudentService;
-
+import org.springframework
 import java.util.List;
 @Service
 public class StudentServiceImpl implements StudentService {
@@ -20,5 +20,9 @@ public class StudentServiceImpl implements StudentService {
         @Override 
         public List<StudentEntity>getAllData(){
             return student.findAll();
+        }
+        publuic String DeleteData(@PathVariable int id){
+            student.deleteById(id);
+            return "Deleted Successfully"
         }   
 }
