@@ -17,4 +17,8 @@ public class impl implements studentservice{
 public StudentEntity postValue(StudentEntity stu){
     return student.save(stu);
 }
+@Override
+ public List<StudentEntity>getAllData(){
+    return student.findAll();
+ }
 }
