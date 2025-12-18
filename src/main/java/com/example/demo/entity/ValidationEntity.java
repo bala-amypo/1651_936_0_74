@@ -55,13 +55,13 @@ public int getAge(){
 public void setAge(int age){
     this.age=age;
 }
-public ValidationEntity(Long Id,@NotNull @Size(min=2, max=10, message="must be 2 to 10 character") String username,
+public ValidationEntity(Long id,@NotNull @Size(min=2, max=10, message="must be 2 to 10 character") String username,
                         @Email(message="Email is not valid") String email,
                         @Size(min=0,max=10) @NotNull(message="Password is mandatory") String password,
                         @Max(30)@Positive(message="Age must be positive") int age
                         ){
                             this.id=id;
-                            this.name=name;
+                            this.username=username;
                             this.email=email;
                             this.password=password;
                             this.age=age;

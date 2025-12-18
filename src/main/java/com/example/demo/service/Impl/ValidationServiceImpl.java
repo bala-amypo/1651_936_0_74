@@ -17,27 +17,5 @@ public class ValidationServiceImpl implements ValidationService {
         public ValidationEntity postData(ValidationEntity stu){
             return student.save(stu);
         }   
-        @Override 
-        public List<ValidationEntity>getAllData(){
-            return student.findAll();
-        }
-        @Override
-        public String DeleteData(int id){
-            student.deleteById(id);
-            return "Deleted Successfully";
-        }
-        @Override
-        public ValidationEntity getData(int id){
-            return student.findById(id).orElse(null);
-        }
-        @Override
-        public ValidationEntity updateData(int id,ValidationEntity entity){
-            if(student.existsById(id)){
-                entity.setId(id);
-                return student.save(entity);
-            }
-            return null;
-        }
-
-
+        
 }
