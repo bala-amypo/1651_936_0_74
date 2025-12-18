@@ -3,8 +3,4 @@ import com.example.demo.entity.ValidationEntity;
 import java.util.List;
 public interface ValidationService{
     ValidationEntity postData(ValidationEntity stu);
-    List<ValidationEntity>getAllData();
-    String DeleteData(int id);
-    ValidationEntity getData(int id);
-    ValidationEntity updateData(int id,ValidationEntity entity);
 }
