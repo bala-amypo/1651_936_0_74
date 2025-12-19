@@ -22,8 +22,8 @@ public class TimeStampController{
 
 
     @PostMapping("/post3")
-    public TimeStampEntity sendData(@RequestBody TimeStampEntity stu){
-        return ser.postData(stu);
+    public TimeStampEntity sendData(@RequestBody TimeStampEntity stu1){
+        return ser.postData(stu1);
 
 
     }
