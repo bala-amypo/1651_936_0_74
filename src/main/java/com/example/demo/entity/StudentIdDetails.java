@@ -12,6 +12,7 @@ public class StudentIdDetails{
     private String idcardnumber;
     private String student_id;
     @OneToOne
-    @JoinColumn(name)
+    @JoinColumn(name="student_id")
+    private StudentDetails student;
                
 }
