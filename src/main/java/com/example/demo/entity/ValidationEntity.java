@@ -10,14 +10,14 @@ import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Email;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.NoArguementConstructor;
-import lombok.AllArguementConstructor     ;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 @Entity
 @Data
 @Getter
 @Setter
-@AllArguementConstructor
-@NoArguementConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class ValidationEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
