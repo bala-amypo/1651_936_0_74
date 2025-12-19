@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.GetMapping;
 import com.example.demo.service.TimeStampService;
-import com.example.demo.service.TimeStampEntity;
+import com.example.demo.entity.TimeStampEntity;
 import java.util.List;
 
 @RestController
