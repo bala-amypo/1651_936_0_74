@@ -5,11 +5,13 @@ import java.util.Date;
 
 @Entity
 @Table
-public class StudentDetails{
+public class StudentIdDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private String name;
-    private String email;
-    private String address;
+    private Integer id;
+    private String idcardnumber;
+    private String student_id;
+    @OneToOne
+    @JoinColumn(name)
                
 }
