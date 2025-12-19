@@ -5,6 +5,11 @@ import java.util.Date;
 
 @Entity
 @Table
+@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
