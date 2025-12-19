@@ -18,7 +18,4 @@ public class TimeStampEntity{
     private String email;
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
-    public TimeStampEntity(){
-
-    }
 }
