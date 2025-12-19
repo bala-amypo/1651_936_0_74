@@ -11,7 +11,7 @@ import jakarta.validation.constraints.Email;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArguementConstructor;
-import lombok.AllArguementConstructor;
+import lombok.AllArguementConstructor     ;
 @Entity
 @Data
 @Getter
