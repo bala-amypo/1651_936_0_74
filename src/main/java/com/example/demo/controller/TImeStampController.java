@@ -22,7 +22,7 @@ public class TimeStampController{
 
 
     @PostMapping("/post3")
-    public TimeStampEntity sendData1(@RequestBody TimeStampEntity stu1){
+    public TimeStampEntity sentData1(@RequestBody TimeStampEntity stu1){
         return serb.postStamp(stu1);
 
 
