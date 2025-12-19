@@ -7,14 +7,14 @@ import com.example.demo.service.TimeStampService;
 import java.util.List;
 @Service
 public class TimeStampServiceImpl implements TimeStampService {
-    @Autowired TimeStampRepo student;
+    @Autowired TimeStampRepo student1;
     //save()
     //findAll()
     //findById()
     //deleteById();
     //existByid();
         @Override
-        public TimeStampEntity postStamp(TimeStampEntity stu){
-            return student.save(stu);
+        public TimeStampEntity postStamp(TimeStampEntity time){
+            return student1.save(time);
         }   
 }
