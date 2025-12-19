@@ -8,7 +8,7 @@ import com.example.demo.service.TimeStampService;
 import com.example.demo.entity.TimeStampEntity;
 
 @RestController
-public class TimeStampControllers{
+public class TimeStampController{
    @Autowired TimeStampService serv; 
    @PostMapping("/post3")
    public TimeStampEntity sendData1(@RequestBody TimeStampEntity stu){
