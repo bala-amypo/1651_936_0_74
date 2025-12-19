@@ -5,7 +5,7 @@ import java.util.Date;
 
 @Entity
 @Table
-public class StudentEntity{
+public class StudentIdCard{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
