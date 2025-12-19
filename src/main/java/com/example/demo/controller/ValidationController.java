@@ -30,7 +30,7 @@ public class ValidationController{
     }
     @GetMapping("/getvalid{id}")
     public ValidationEntity findData(@PathVariable int id){
-    return serve.findData(id);
+    return ser.findData(id);
     
     }
    
