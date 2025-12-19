@@ -17,13 +17,13 @@ import java.util.List;
 @RestController
 public class TimeStampController{
 
-    @Autowired TimeStampService ser;
+    @Autowired TimeStampService serb;
 
 
 
     @PostMapping("/post3")
-    public TimeStampEntity sendData(@RequestBody TimeStampEntity stu1){
-        return ser.postData(stu1);
+    public TimeStampEntity sendData1(@RequestBody TimeStampEntity stu1){
+        return serb.postStamp(stu1);
 
 
     }
