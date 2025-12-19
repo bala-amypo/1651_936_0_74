@@ -17,31 +17,31 @@ import java.util.List;
 @RestController
 public class StudentController{
 
-    @Autowired StudentService ser;
+    @Autowired StudentService sert;
 
 
 
     @PostMapping("/post")
     public StudentEntity sendData(@RequestBody StudentEntity stu){
-        return ser.postData(stu);
+        return sert.postData(stu);
 
 
     }
     @GetMapping("/get")
     public List<StudentEntity> getval(){
-        return ser.getAllData();
+        return sert.getAllData();
     }
     @DeleteMapping("/delete/{id}")
     public String deleteVal(@PathVariable int id){
-        return ser.DeleteData(id);
+        return sert.DeleteData(id);
     }
     @GetMapping("/getid/{id}")
     public StudentEntity getDataid(@PathVariable int id){
-        return ser.getData(id);
+        return sert.getData(id);
     }
     @PutMapping("/put/{id}")
     public StudentEntity putval(@PathVariable int id,@RequestBody StudentEntity entity){
-        return ser.updateData(id,entity);
+        return sert.updateData(id,entity);
     }
 
 }
